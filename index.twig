@@ -11,32 +11,16 @@
 
 <aside class="main-nav">
 <nav class="menu">
-  
-  <!-- <p class="directory">{{ current_page.id |root}}</p> -->
-  <p class="directory"><a href="{{ base_url }}">Home</a>/{{ current_page.id |root|directoryChain}}</p>
-
-  {% set offset = 0 %}
-  <ul>
-    {% for page in pages|sort_by("title")%}
-    {% if page.meta.shortcut %}
-      <span class="shortcut-data" style="display:none;" data-shortcut='{{ page.meta.shortcut }}'>{{ page.url }}</span>
-    {% endif %}
-    {%if current_page.id|isIndex %}
-      {% set offset = 1 %}
-    {% endif %}
-
-      {% if (is_front_page or (page.id starts with current_page.id |root)) 
-      and (current_page.id|level == page.id|level-offset) %}
-
-      <li class="menuitem {% if page.id == current_page.id %}active{% endif %}">
-        <a href="{{ page.url }}" data-shortcut="{{page.meta.shortcut}}">
-          {{ page.title }}
-        </a>
-      </li>
-
-      {% endif %}
+<ul>
+    {% for page in pages if page.title %}
+        {% set pageDepth = page.id|split('/')|length %}
+        {% if (pageDepth == 2) and (page.id ends with "/index") or (pageDepth == 1) %}
+            <li>
+                <a href="{{ page.url }}">{{ page.title }}</a>
+            </li>
+        {% endif %}
     {% endfor %}
-  </ul>
+</ul>
 </nav>
 </aside>
 
