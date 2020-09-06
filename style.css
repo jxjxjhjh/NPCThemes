@@ -1,16 +1,10 @@
 /* generic styles */
 body {
-  margin:0;
+  margin:0 auto;
   padding:0;
+  width: 1200px;
   background:#fafafa;
   font-size:10px;
-}
-a {
-  color:black;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
 }
 ul{
   padding:0;
@@ -20,6 +14,7 @@ ul{
 .main-nav {
   float:left;
   width: 15%;
+  min-width:15rem;
   padding:2rem;
 }
 .main-nav ul, .main-nav ol {
@@ -30,8 +25,8 @@ ul{
 /* content */
 .main-content {
   float:left;
-  width:75%;
-  border-left:1px solid #fcc;
+  width:78%;
+  border-left:1px solid #ccc;
 }
 .article {
   margin:2em 3em;
