@@ -26,6 +26,7 @@ ul{
 
 .main-nav {
   float:left;
+  width: 150px;
   margin:2rem;
 }
 .directory {
@@ -38,13 +39,6 @@ ul{
 }
 .main-nav a:hover {
   text-decoration: underline;
-}
-
-.active a {
-  font-weight:700;
-}
-.toc-list{
-  padding:0!important;
 }
 
 /* content */
