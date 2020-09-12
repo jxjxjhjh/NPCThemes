@@ -41,7 +41,8 @@ pre {
   border:1px solid #aaa;
   overflow:hidden;
   padding: 10px;
-  background: #ffe;
+  background: #fff;
+  white-space: break-spaces;
 }
 pre code {
   overflow-x:scroll;
