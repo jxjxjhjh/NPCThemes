@@ -86,3 +86,15 @@ p code, li code  {
 .article p {
   line-height:1.5em;
 }
+/*--- mobile ---*/
+@media screen and (max-width: 1024px) {
+  .main-nav{
+    float:none;
+    position: fixed;
+    right: 0;
+  }
+  .main-content{
+    float: none;
+    width: calc(100% - 150px);
+  }
+}
