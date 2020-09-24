@@ -34,6 +34,12 @@ ul,ol{
   width:78%;
   border-left:1px solid #ccc;
 }
+.menu{
+  width: 100%;
+}
+.menu ul li{
+  float:left;
+}
 .article {
   margin:2em 3em;
 }
