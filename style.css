@@ -10,16 +10,18 @@ a,a:hover{
   text-decoration:none;
   color:#666;
 }
-ul,ol{
+ul,ol,li{
   margin: 0;
   padding:0;
+  list-style: none;
 }
 /* specific things */
 /* sidebar left */
 .main-nav {
-  float:left;
+  float:right;
   width:150px;
   padding:15px;
+  border-left: 1px solid #eee;
 }
 .main-nav ul, .main-nav ol {
   list-style:none;
@@ -34,14 +36,18 @@ ul,ol{
   width:78%;
   border-left:1px solid #ccc;
 }
+.main-content {
+  margin:2em 3em;
+}
 .menu{
   width: 100%;
+  overflow: hidden;
 }
 .menu ul li{
   float:left;
-}
-.article {
-  margin:2em 3em;
+  padding:0 20px;
+  width: 100px;
+  text-align: center;
 }
 pre {
   border:1px solid #aaa;
@@ -99,10 +105,12 @@ p code, li code  {
     width:100%;
   }
   .main-nav{
-    float:right;
+    position: fixed;
+    right: 0;
+    top: 100px;
   }
   .main-content{
     float: none;
-    width: calc(100%);
+    width:100%;
   }
 }
