@@ -1,6 +1,6 @@
 /* generic styles */
 body {
-  margin:0 auto;
+  margin:20px auto 0;
   padding:0;
   width: 1200px;
   background:#fafafa;
@@ -34,7 +34,6 @@ ul,ol,li{
 .main-content {
   float:left;
   width:78%;
-  border-left:1px solid #ccc;
 }
 .main-content {
   margin:2em 3em;
