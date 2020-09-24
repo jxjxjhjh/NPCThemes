@@ -93,12 +93,10 @@ p code, li code  {
     width:100%;
   }
   .main-nav{
-    float:none;
-    position: fixed;
-    right: 0;
+    float:right;
   }
   .main-content{
     float: none;
-    width: calc(100% - 150px);
+    width: calc(100%);
   }
 }
