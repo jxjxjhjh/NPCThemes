@@ -18,10 +18,13 @@ ul,ol,li{
 /* specific things */
 /* sidebar left */
 .main-nav {
-  float:right;
+  position: fixed;
+  top:100px;
+  right:0;
   width:150px;
   padding:15px;
   border-left: 1px solid #eee;
+  background: rgba(218, 218, 218, 0.096);
 }
 .main-nav ul, .main-nav ol {
   list-style:none;
@@ -102,11 +105,6 @@ p code, li code  {
   body{
     margin:0;
     width:100%;
-  }
-  .main-nav{
-    position: fixed;
-    right: 0;
-    top: 100px;
   }
   .main-content{
     float: none;
