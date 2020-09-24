@@ -1,10 +1,12 @@
 /* generic styles */
 body {
-  margin:20px auto 0;
+  margin:20px auto;
   padding:0;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   background:#fafafa;
   font-size:18px;
+  position: relative;
 }
 a,a:hover{
   text-decoration:none;
@@ -18,13 +20,12 @@ ul,ol,li{
 /* specific things */
 /* sidebar left */
 .main-nav {
-  position: fixed;
+  position: absolute;
   top:100px;
   right:0;
   width:150px;
   padding:15px;
   border-left: 1px solid #eee;
-  background: rgba(218, 218, 218, 0.096);
 }
 .main-nav ul, .main-nav ol {
   list-style:none;
@@ -32,14 +33,12 @@ ul,ol,li{
 }
 .main-nav nav{
   width: 150px;
+  padding: 10px;
+  background: rgba(99,99,99,.1);
 }
 /* content */
 .main-content {
-  float:left;
   width:78%;
-}
-.main-content {
-  margin:2em 3em;
 }
 .menu{
   width: 100%;
@@ -47,9 +46,8 @@ ul,ol,li{
 }
 .menu ul li{
   float:left;
-  padding:0 20px;
+  padding:0 20px 0 0;
   width: 100px;
-  text-align: center;
 }
 pre {
   border:1px solid #aaa;
@@ -102,12 +100,7 @@ p code, li code  {
 }
 /*--- mobile ---*/
 @media screen and (max-width: 1024px) {
-  body{
-    margin:0;
-    width:100%;
-  }
   .main-content{
-    float: none;
     width:100%;
   }
 }
