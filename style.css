@@ -27,18 +27,18 @@ ul,ol,li{
   padding:15px;
   border-left: 1px solid #eee;
 }
-.main-nav ul, .main-nav ol {
+.tocbot ul, .tocbot ol {
   list-style:none;
   line-height:1.5em;
 }
-.main-nav nav{
+.tocbot{
   width: 150px;
   padding: 10px;
   background: rgba(99,99,99,.1);
 }
 /* content */
 .main-content {
-  width:78%;
+  width: calc(100% - 200px);
 }
 .menu{
   width: 100%;
@@ -97,10 +97,4 @@ p code, li code  {
 }
 .article p {
   line-height:1.5em;
-}
-/*--- mobile ---*/
-@media screen and (max-width: 1024px) {
-  .main-content{
-    width:100%;
-  }
 }
