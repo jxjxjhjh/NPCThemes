@@ -17,14 +17,13 @@ ul,ol,li{
   padding:0;
   list-style: none;
 }
-/* specific things */
-/* sidebar left */
-.main-nav {
+
+.tocbot {
   position: absolute;
   top:100px;
   right:0;
   width:150px;
-  padding:15px;
+  padding:0 10px;
   border-left: 1px solid #eee;
 }
 .tocbot ul, .tocbot ol {
@@ -36,37 +35,21 @@ ul,ol,li{
   padding: 10px;
   background: rgba(99,99,99,.1);
 }
-/* content */
-.main-content {
-  width: calc(100% - 200px);
-}
+
 .menu{
   width: 100%;
   overflow: hidden;
+  margin:20px;
 }
 .menu ul li{
   float:left;
-  padding:0 20px 0 0;
+  padding:0 10px;
   width: 100px;
 }
-pre {
-  border:1px solid #aaa;
-  overflow:hidden;
-  padding: 10px;
-  background: #fff;
-  white-space: break-spaces;
-}
-pre code {
-  overflow-x:scroll;
-}
 
-p code, li code  {
-  background:#F0F0F0;
-  color:#444;
-  border:1px solid #ccc;
-  padding:0.1em 0.2em;
+.main-content {
+  width: calc(100% - 200px);
 }
-
 .article h1, .article h2, .article h3, .article h4, .article h5, .article h6{
   padding-left:10px;
   margin:50px 0 20px 0;
@@ -97,4 +80,20 @@ p code, li code  {
 }
 .article p {
   line-height:1.5em;
+}
+
+pre {
+  border:1px solid #aaa;
+  overflow:hidden;
+  padding: 10px;
+  background: #fff;
+  white-space: break-spaces;
+}
+
+code  {
+  background:#F0F0F0;
+  color:#444;
+  border:1px solid #ccc;
+  padding:0.1em 0.2em;
+  overflow-x:scroll;
 }

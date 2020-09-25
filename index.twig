@@ -9,22 +9,20 @@
 </head>
 <body>
 
-<aside class="main-nav">
-<div class="tocbot"></div>
-</aside>
+<nav class="tocbot"></nav>
 
-  <nav class="menu">
-    <ul>
-      {% for page in pages if page.title %}
-          {% set pageDepth = page.id|split('/')|length %}
-          {% if (pageDepth == 2) and (page.id ends with "/index") or (pageDepth == 1) %}
-              <li>
-                  <a href="{{ page.url }}">{{ page.title }}</a>
-              </li>
-          {% endif %}
-      {% endfor %}
-    </ul>
-  </nav>
+<menu class="menu">
+  <ul>
+    {% for page in pages if page.title %}
+    {% set pageDepth = page.id|split('/')|length %}
+    {% if (pageDepth == 2) and (page.id ends with "/index") or (pageDepth == 1) %}
+      <li>
+        <a href="{{ page.url }}">{{ page.title }}</a>
+      </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</menu>
 
 <main class="main-content">
   <article class="article">
@@ -40,7 +38,7 @@ var dlall=document.querySelectorAll('h1,h2,h3,h4,h5,h6');  //给标题增加id�
   for(i=0;i<dlall.length;i++){ 
     dlall[i].id='tocbot_'+i;
   }
-
+  
 tocbot.init({
   // 构建目录的容器
   tocSelector: '.tocbot',
