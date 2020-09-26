@@ -6,7 +6,6 @@ body {
   max-width: 1200px;
   background:#fafafa;
   font-size:18px;
-  position: relative;
 }
 a,a:hover{
   text-decoration:none;
@@ -19,27 +18,24 @@ ul,ol,li{
 }
 
 .tocbot {
-  position: absolute;
+  position: fixed;
   top:100px;
   right:0;
   width:150px;
   padding:0 10px;
   border-left: 1px solid #eee;
+  transform: translateX(0);
+  right: calc((100% - 75rem) / 2);
 }
 .tocbot ul, .tocbot ol {
   list-style:none;
   line-height:1.5em;
 }
-.tocbot{
-  width: 150px;
-  padding: 10px;
-  background: rgba(99,99,99,.1);
-}
 
 .menu{
   width: 100%;
   overflow: hidden;
-  margin:20px;
+  padding: 0;
 }
 .menu ul li{
   float:left;
@@ -49,6 +45,9 @@ ul,ol,li{
 
 .main-content {
   width: calc(100% - 200px);
+}
+.article{
+  mainrg-left:10px;
 }
 .article h1, .article h2, .article h3, .article h4, .article h5, .article h6{
   padding-left:10px;
