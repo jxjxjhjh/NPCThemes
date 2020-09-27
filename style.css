@@ -9,6 +9,8 @@ body {
 a,a:hover{
   text-decoration:none;
   color:#666;
+  word-wrap:break-word;
+  word-break:break-all;
 }
 ul,ol,li{
   margin: 0;
@@ -42,7 +44,7 @@ ul,ol,li{
 }
 
 .main-content {
-  width: calc(100% - 12rem);
+  width: calc(100% - 18%);
 }
 .article{
 
@@ -98,6 +100,7 @@ code  {
 @media screen and (min-width: 480px) and (max-width: 1250px){
   body{
     margin: 2rem;
+    display: inherit;
   }
   .tocbot{
     right:0;
