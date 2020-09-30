@@ -94,7 +94,7 @@ code  {
   overflow-x:scroll;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1250px){
+@media screen and (max-width: 1250px){
   body{
     margin: 2rem;
     display: inherit;
