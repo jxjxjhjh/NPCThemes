@@ -44,7 +44,7 @@ ul,ol,li{
 }
 
 .main-content {
-  width: calc(100% - 18%);
+  width: calc(100% - 200px);
 }
 .article h1, .article h2, .article h3, .article h4, .article h5, .article h6{
   padding-left:10px;
@@ -94,7 +94,7 @@ code  {
   overflow-x:scroll;
 }
 
-@media screen and (max-width: 1250px){
+@media screen and (max-width: 960px){
   body{
     margin: 2rem;
     display: inherit;
@@ -102,5 +102,4 @@ code  {
   .tocbot{
     right:0;
   }
-
 }
