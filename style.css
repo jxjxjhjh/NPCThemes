@@ -100,7 +100,10 @@ code  {
     display: inherit;
   }
   .tocbot{
-    top:100px!important;
+    top:150px!important;
     right:0;
+  }
+  .toc-list li{
+    width: 130px;
   }
 }
