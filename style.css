@@ -54,6 +54,10 @@ ul,ol,li{
   font:700 3rem serif;
   border-left: 10px solid #ff0000;
 }
+.article h1:before{
+  content:"#"
+  color:red;
+}
 .article h2 {
   font:600 2.4rem serif;
   border-left: 6px solid #ff9900;
