@@ -55,7 +55,7 @@ ul,ol,li{
   border-left: 10px solid #ff0000;
 }
 .article h1:before{
-  content:"#"
+  content:"#";
   color:red;
 }
 .article h2 {
