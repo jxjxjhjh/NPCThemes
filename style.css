@@ -50,6 +50,9 @@ ul,ol,li{
   padding-left:10px;
   margin:50px 0 20px 0;
 }
+.article h1:before, .article h2:before, .article h3:before, .article h4:before, .article h5:before, .article h6:before{
+  vertical-align:super;
+}
 .article h1 {
   font:700 2rem serif;
 }
@@ -63,7 +66,7 @@ ul,ol,li{
 }
 .article h2:before{
   content:"##";
-  color:#ff6666;
+  color:#ff8100;
   padding-right: 2px;
 }
 .article h3 {
@@ -71,7 +74,7 @@ ul,ol,li{
 }
 .article h3:before{
   content:"###";
-  color:#ff9933;
+  color:#ff006a;
   padding-right: 2px;
 }
 .article h4 {
@@ -79,7 +82,7 @@ ul,ol,li{
 }
 .article h4:before{
   content:"####";
-  color:#ffff00;
+  color:#00adff;
   padding-right: 2px;
 }
 .article h5 {
@@ -87,7 +90,7 @@ ul,ol,li{
 }
 .article h5:before{
   content:"#####";
-  color:#669966;
+  color:#008e4c;
   padding-right: 2px;
 }
 .article h6 {
@@ -95,7 +98,7 @@ ul,ol,li{
 }
 .article h6:before{
   content:"######";
-  color:#009900;
+  color:#797979;
   padding-right: 2px;
 }
 .article p {
