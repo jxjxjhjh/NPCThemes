@@ -4,7 +4,7 @@ body {
   width: 100%;
   max-width: 1200px;
   background:#fafafa;
-  font-size:18px;
+  font-size:16px;
 }
 a,a:hover{
   text-decoration:none;
@@ -51,32 +51,52 @@ ul,ol,li{
   margin:50px 0 20px 0;
 }
 .article h1 {
-  font:700 3rem serif;
-  border-left: 10px solid #ff0000;
+  font:700 2rem serif;
 }
 .article h1:before{
   content:"#";
   color:red;
+  padding-right: 2px;
 }
 .article h2 {
-  font:600 2.4rem serif;
-  border-left: 6px solid #ff9900;
+  font:600 1.5rem serif;
+}
+.article h2:before{
+  content:"##";
+  color:#ff6666;
+  padding-right: 2px;
 }
 .article h3 {
-  font:500 1.8rem serif;
-  border-left: 3px solid #ffcc00;
+  font:500 1.25rem serif;
+}
+.article h3:before{
+  content:"###";
+  color:#ff9933;
+  padding-right: 2px;
 }
 .article h4 {
-  font:400 1.4rem serif;
-  border-left: 1px solid #ff9999;
+  font:400 1rem serif;
+}
+.article h4:before{
+  content:"####";
+  color:#ffff00;
+  padding-right: 2px;
 }
 .article h5 {
-  font:300 1.2rem serif;
-  border-left: 1px solid #66ccff;
+  font:300 0.75rem serif;
+}
+.article h5:before{
+  content:"#####";
+  color:#669966;
+  padding-right: 2px;
 }
 .article h6 {
-  font:200 1.2rem serif;
-  border-left: 1px solid #ccffcc;
+  font:200 0.5rem serif;
+}
+.article h6:before{
+  content:"######";
+  color:#009900;
+  padding-right: 2px;
 }
 .article p {
   line-height:1.5em;
