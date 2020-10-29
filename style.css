@@ -127,7 +127,7 @@ code  {
     display: inherit;
   }
   .tocbot{
-    top:150px!important;
+    top:10px!important;
     right:0;
   }
   .toc-list li{
