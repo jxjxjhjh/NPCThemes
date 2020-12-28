@@ -1,29 +1,29 @@
 Hansanshi/mark-idea的docker镜像构建项目，代码来自chy9002/mark-idea
 
-version: '3'
+    version: '3'
 
-services:
+    services:
 
-  mark-idea:
+      mark-idea:
   
-    image: jxjxjhjh/mark-idea
+        image: jxjxjhjh/mark-idea
     
-    ports:
+        ports:
     
-      - "<host port>:8090"
+          - "<host port>:8090"
       
-    restart: always
+        restart: always
     
-    environment:
+        environment:
     
-        - USERNAME=<default-username>
+            - USERNAME=<default-username>
         
-        - PASSWORD=<default-password>
+            - PASSWORD=<default-password>
         
-        - REGISTER=false #true: allow register;false: disallow regisster
+            - REGISTER=false #true: allow register;false: disallow regisster
         
-    volumes:
+        volumes:
     
-            - <local_path>:/app/db
+                - <local_path>:/app/db
             
-            - <local_path>:/app/notes/<username>(不使用本地文件同步方式请删除此项)
+                - <local_path>:/app/notes/<username>(不使用本地文件同步方式请删除此项)
