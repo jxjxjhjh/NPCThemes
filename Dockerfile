@@ -17,7 +17,7 @@
 
 FROM openjdk:8-jre-alpine
 RUN mkdir /app && wget https://glare.now.sh/Hansanshi/mark-idea/note -O /app/note.jar
-    #--from=app-back /app/target/note-0.4.jar /app/note.jar
+ #--从=程序回/app/target/note-0.4.1.jar /app/note.jar
 WORKDIR /app
 ENV USERNAME=username
 ENV PASSWORD=password
