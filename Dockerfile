@@ -16,7 +16,7 @@
 # RUN mvn package -Dmaven.test.skip=true
 
 FROM openjdk:8-jre-alpine
-RUN mkdir /app && wget https://github.com/Hansanshi/mark-idea/releases/download/v0.4.2/note-0.4.2.jar -O /app/note.jar
+RUN mkdir /app && wget https://github.com/Hansanshi/mark-idea/releases/download/V0.4.2/note-0.4.2.jar -O /app/note.jar
 
 WORKDIR /app
 ENV USERNAME=username
