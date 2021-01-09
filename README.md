@@ -1,4 +1,4 @@
-Hansanshi/mark-idea的docker镜像构建项目，代码来自chy9002/mark-idea
+https://github.com/Hansanshi/mark-idea的非官方docker镜像构建，代码来自https://github.com/chy9002/docker-mark-idea
 
     version: '3'
     services:
